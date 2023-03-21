@@ -4,7 +4,7 @@
   int yylex(void);  
 %}
 %%
-^[ \t]+   { /* pomiń początkowe spacje */ }
+^[ \t]+
 %%
 int yywrap(void) { return 1; }
 int main(void) { return yylex(); }
